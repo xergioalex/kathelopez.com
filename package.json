@@ -1,0 +1,24 @@
+{
+  "name": "kathelopez.com",
+  "version": "1.0.0",
+  "description": "A simple website for kathelopez.com",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server",
+    "sass:watcher": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xergioalex/kathelopez.com.git"
+  },
+  "author": "Sergio Alexander Florez (XergioAleX)",
+  "bugs": {
+    "url": "https://github.com/xergioalex/kathelopez.com/issues"
+  },
+  "homepage": "https://github.com/xergioalex/kathelopez.com#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3",
+    "sass": "^1.26.10"
+  }
+}

@@ -1,2 +1,3 @@
 # kathelopez.com
-A simple personal website for Katherine Lopez
+
+A simple personal website for kathelopez.com

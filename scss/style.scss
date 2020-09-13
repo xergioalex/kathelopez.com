@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5,
 			color: $white;
 		}
 	}
-	
+
 	.navbar-nav {
 		@include media-breakpoint-down(md){
 			padding-bottom: 20px;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5,
 					color: $white;
 				}
 			}
-			
+
 			&.cta {
 				> a {
 					color: $white;
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5,
 					}
 				}
 			}
-			
+
 				.nav-link {
 					&.active {
 					background: transparent;
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5,
 					}
 				}
 			}
-			
+
 			@include media-breakpoint-down(md){
 				&.active {
 					> a {
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5,
 			outline: none !important;
 		}
 	}
-	
+
 	&.scrolled  {
 		position: fixed;
 		right: 0;
@@ -312,7 +312,7 @@ h1, h2, h3, h4, h5,
 			transition: .3s all ease-out;
 		}
 		&.sleep {
-			transition: .3s all ease-out;	
+			transition: .3s all ease-out;
 		}
 
 		.navbar-brand {
@@ -585,7 +585,7 @@ h1, h2, h3, h4, h5,
 		&:hover {
 			border: 1px solid $primary !important;
 			background: $primary !important;
-			color :$black !important;
+			color :$white !important;
 		}
 		&.btn-outline-primary {
 			border: 2px solid $primary !important;
@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5,
 		width: 50px;
 		height: 50px;
 		background: $primary;
-		@include border-radius(50%);	
+		@include border-radius(50%);
 		span{
 			color: $white;
 			font-size: 28px;
@@ -795,7 +795,7 @@ h1, h2, h3, h4, h5,
 }
 
 
-.services-1{
+.services-1 {
 	margin-bottom: 40px;
 	padding: 2em;
 	background: rgba(255,255,255,.1);
@@ -807,6 +807,15 @@ h1, h2, h3, h4, h5,
 			font-size: 60px;
 			line-height: 1.0;
 			color: $primary;
+		}
+	}
+	.icon-img {
+		width: 30%;
+		margin-bottom: 20px;
+		&.icon-2 {
+			width: 30%;
+			margin-bottom: 25px;
+			padding: 20px 0 0 0;
 		}
 	}
 	.desc{
@@ -821,7 +830,7 @@ h1, h2, h3, h4, h5,
 			&:after{
 				position: absolute;
 				bottom: -15px;
-				left: 0; 
+				left: 0;
 				right: 0;
 				content: '';
 				width: 30px;
@@ -849,20 +858,20 @@ h1, h2, h3, h4, h5,
 			color: rgba(0,0,0,.7);
 		}
 	}
-	&:hover{
-		background: $primary;
-		.icon{
-			i{
-				color: $white;
-			}
-		}
-		h3{
-			color: $black;
-			&:after{
-				background: $black;
-			}
-		}
-	}
+	// &:hover{
+	// 	background: $primary;
+	// 	.icon{
+	// 		i{
+	// 			color: $white;
+	// 		}
+	// 	}
+	// 	h3{
+	// 		color: $black;
+	// 		&:after{
+	// 			background: $black;
+	// 		}
+	// 	}
+	// }
 }
 
 
@@ -1403,9 +1412,9 @@ textarea.form-control {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
@@ -1416,7 +1425,7 @@ textarea.form-control {
     opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
@@ -1473,7 +1482,7 @@ textarea.form-control {
 	}
 }
 
-//blocks 
+//blocks
 .block-20 {
 	overflow: hidden;
 	background-size: cover;
@@ -1530,7 +1539,7 @@ textarea.form-control {
 	ul {
 		padding: 0;
 		li {
-			
+
 			&, > a {
 				display: table;
 				line-height: 1.5;
@@ -1549,7 +1558,7 @@ textarea.form-control {
 				padding-top: 2px;
 				color: rgba($white, 1);
 			}
-			
+
 		}
 	}
 }
@@ -1570,7 +1579,7 @@ textarea.form-control {
 			font-size: 16px;
 		}
 	}
-} 
+}
 
 .block-27 {
 	ul {
@@ -1671,8 +1680,6 @@ textarea.form-control {
 		outline: none!important;
 		box-shadow: none!important;
 		font-size: 15px;
-	}
-	#map {
 	}
 
 }
@@ -1895,7 +1902,7 @@ textarea.form-control {
 	background-color: rgba(255,255,255,0.9);
 	box-shadow: 0px 24px 64px rgba(0,0,0,0.24);
 	border-radius:16px;
-	opacity: 0; 
+	opacity: 0;
 	visibility: hidden;
 	transition: opacity .2s ease-out, visibility 0s linear .2s;
 	z-index:1000;
@@ -1954,4 +1961,13 @@ textarea.form-control {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px;
   }
+}
+
+
+@media (max-width: 767px) {
+	.class-img-profile {
+		height: 400px;
+		width: 50%;
+		padding: 50px 15% 0 15%;
+	}
 }

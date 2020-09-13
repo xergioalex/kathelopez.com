@@ -10780,6 +10780,14 @@ textarea.form-control {
     width: 100%;
   }
 }
+.contact-section .contact-form #feedback {
+  color: #a72626;
+  font-weight: 600;
+  display: none;
+}
+.contact-section .contact-form #feedback.success {
+  display: block !important;
+}
 
 .block-9 .form-control {
   outline: none !important;

@@ -1672,6 +1672,14 @@ textarea.form-control {
 				width: 100%;
 			}
 		}
+		#feedback {
+			color: $primary;
+			font-weight: 600;
+			display: none;
+			&.success {
+				display: block !important;
+			}
+		}
 	}
 }
 .block-9 {

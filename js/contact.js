@@ -1,7 +1,9 @@
 $('#contact-form').submit(function(event) {
   event.preventDefault();
-  $('#feedback').html('');
   setTimeout(function() {
+    $('#feedback').html('');
+    $('#feedback').removeClass('success');
+
   	// Get data
     var data = {
       'entry.451969395': $('#form-name').val(),
@@ -15,12 +17,15 @@ $('#contact-form').submit(function(event) {
 
     // Validate form
     var formSuccess = true;
-    // Object.keys(data).forEach(function(key, index) {
-    //   if (!data[key]) {
-    //     formSuccess = false;
-    //     $('#feedback').html('<label class="text-danger">Please complete all fields</label>');
-    //   }
-    // });
+    Object.keys(data).forEach(function(key, index) {
+      console.log(key)
+      console.log(data[key])
+      if (!data[key] && key !== 'entry.585425995') {
+        formSuccess = false;
+        $('#feedback').addClass('success');
+        $('#feedback').html('Por favor completa todos los campos requeridos');
+      }
+    });
 
     if (formSuccess) {
       // Send request
@@ -31,12 +36,20 @@ $('#contact-form').submit(function(event) {
         dataType: "xml",
         data: data,
         success: function(jqXHR, textStatus, errorThrown) {
-          console.log('Enter on success');
-          $('#feedback').html('<label class="text-success">Message sent!</label>');
+          $('#feedback').html('¡Mensaje enviado!<br/>Gracias por contactarme :)');
+          $('#feedback').addClass('success');
+          $('#form-name').val('')
+          $('#form-email').val('')
+          $('#form-phone').val('')
+          $('#form-message').val('')
         },
         error: function(jqXHR, textStatus, errorThrown) {
-          console.log('Enter on error');
-          $('#feedback').html('<label class="text-success">Message sent!</label>');
+          $('#feedback').html('¡Mensaje enviado!<br/>Gracias por contactarme :)');
+          $('#feedback').addClass('success');
+          $('#form-name').val('')
+          $('#form-email').val('')
+          $('#form-phone').val('')
+          $('#form-message').val('')
         }
       });
     }

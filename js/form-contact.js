@@ -12,9 +12,6 @@ $('#contact-form').submit(function(event) {
       'entry.555184467': $('#form-message').val()
     };
 
-    console.log('----- Llega aqui -----')
-    console.log(data)
-
     // Validate form
     var formSuccess = true;
     Object.keys(data).forEach(function(key, index) {

@@ -18,7 +18,7 @@
   "homepage": "https://github.com/xergioalex/kathelopez.com#readme",
   "dependencies": {},
   "devDependencies": {
-    "http-server": "^0.12.3",
-    "sass": "^1.26.10"
+    "http-server": "14.1.1",
+    "sass": "1.54.9"
   }
 }
